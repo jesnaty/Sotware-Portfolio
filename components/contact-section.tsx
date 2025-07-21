@@ -47,6 +47,16 @@ export function ContactSection() {
                 Schedule Meeting
               </a>
             </Button>
+            <Button
+              variant="secondary"
+              size="lg"
+              className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-slate-900 px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 bg-transparent"
+              asChild
+            >
+              <a href="/natnael-ayele-cv.pdf" target="_blank" rel="noopener noreferrer" download>
+                Download CV
+              </a>
+            </Button>
           </div>
         </div>
       </div>
