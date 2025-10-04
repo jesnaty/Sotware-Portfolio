@@ -21,7 +21,7 @@ export function FloatingImage({ src, alt, className = "" }: FloatingImageProps) 
   // Prevent hydration mismatch by not rendering animations until mounted
   if (!isMounted) {
     return (
-      <div className={`relative ${className}`}>
+      <div className={`relative ${className}`} suppressHydrationWarning>
         <Image
           src={src || "/placeholder.svg"}
           alt={alt}
@@ -35,7 +35,7 @@ export function FloatingImage({ src, alt, className = "" }: FloatingImageProps) 
   }
 
   return (
-    <div className={`relative ${className}`}>
+    <div className={`relative ${className}`} suppressHydrationWarning>
       <div className="absolute inset-0 bg-blue-400 rounded-full animate-pulse opacity-20 scale-110"></div>
       <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full animate-ping opacity-10 scale-125"></div>
       <Image
