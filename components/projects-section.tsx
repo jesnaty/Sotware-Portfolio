@@ -9,7 +9,7 @@ import Image from "next/image"
 
 const projects = [
   {
-    title: "Zentry - AI Queue Management",
+    title: "Zentry - Queue Management",
     description:
       "Enterprise-grade AI-powered queue management SaaS platform that reduces wait times by 85% and transforms customer experience across multiple industries.",
     image: "/projects/zentry-queue-management.jpg",
@@ -31,7 +31,7 @@ const projects = [
     featured: true,
   },
   {
-    title: "FreshFlow - AI Nutrition Platform",
+    title: "FreshFlow - Nutrition Platform",
     description:
       "Complete AI-powered nutrition platform that revolutionizes meal planning with personalized recommendations, 15-minute prep times, and team collaboration features.",
     image: "/projects/freshflow-nutrition.jpg",
@@ -52,13 +52,46 @@ const projects = [
     featured: true,
   },
   {
+    title: "Conta - Digital Marketing Agency",
+    description:
+      "A comprehensive digital marketing agency platform offering web design, development, SEO optimization, and digital marketing services with modern UI/UX and responsive design.",
+    image: "/projects/conta-marketing.jpg",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel", "Responsive Design"],
+    features: ["Modern UI/UX Design", "Service Portfolio", "Client Showcase", "Contact Integration", "Mobile Responsive", "SEO Optimized"],
+    githubUrl: "https://github.com/jesnaty/conta-marketing-agency",
+    liveUrl: "https://conta-marketing-agency.vercel.app/",
+    featured: true,
+  },
+  {
+    title: "WordPress E-commerce Platform",
+    description:
+      "A fully functional WordPress e-commerce website with WooCommerce integration, custom themes, and payment processing for online businesses.",
+    image: "/projects/wordpress-ecommerce.jpg",
+    technologies: ["WordPress", "WooCommerce", "PHP", "MySQL", "CSS3", "JavaScript", "PayPal Integration"],
+    features: ["Custom Theme Development", "E-commerce Functionality", "Payment Gateway Integration", "Product Management", "Order Tracking", "Mobile Responsive"],
+    githubUrl: "https://github.com/jesnaty/wordpress-ecommerce",
+    featured: true,
+  },
+  {
+    title: "Figma UI/UX Design System",
+    description:
+      "Comprehensive design system and UI/UX prototypes created in Figma, featuring modern interfaces, component libraries, and user experience workflows.",
+    image: "/projects/figma-design-system.jpg",
+    technologies: ["Figma", "UI/UX Design", "Design Systems", "Prototyping", "Wireframing", "User Research"],
+    features: ["Component Library", "Design System", "Interactive Prototypes", "User Journey Mapping", "Responsive Design", "Accessibility Guidelines"],
+    githubUrl: "https://github.com/jesnaty/figma-design-system",
+    liveUrl: "https://www.figma.com/design/CRJBW3XpkDdpv2W5N6TwLP/Untitled?t=1oQyW175AgOXTAxp-0",
+    featured: true,
+  },
+  {
     title: "DevOps Testing Project",
     description:
-      "A collaborative task management application with real-time updates, team collaboration, and project tracking.",
+      "A collaborative task management application with real-time updates, team collaboration, and project tracking using CI/CD pipelines and automated testing.",
     image: "/projects/devops.jpeg",
-    technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Express"],
-    features: ["Real-time collaboration", "Project tracking", "Team management", "File sharing"],
+    technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Express", "Docker", "Jenkins", "AWS"],
+    features: ["Real-time collaboration", "Project tracking", "Team management", "File sharing", "CI/CD Pipeline", "Automated Testing"],
     githubUrl: "https://github.com/jesnaty/CI-CD_test",
+    liveUrl: "https://devops-testing-demo.vercel.app/",
     featured: true,
   },
   {
