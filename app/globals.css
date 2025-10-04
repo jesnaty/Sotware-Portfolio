@@ -50,6 +50,11 @@
     animation: gradient-shift 4s ease infinite alternate;
   }
 
+  .animate-gradient-x {
+    animation: gradient-x 3s ease infinite;
+    background-size: 200% 200%;
+  }
+
   .glitch-effect {
     position: absolute;
     top: 0;
@@ -89,6 +94,18 @@
   }
   100% {
     background-position: 100% 50%;
+  }
+}
+
+@keyframes gradient-x {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 

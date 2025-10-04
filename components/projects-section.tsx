@@ -97,12 +97,13 @@ const projects = [
   {
     title: "Social Media Management Tool",
     description:
-      "A comprehensive weather analytics platform with data visualization, forecasting, and historical analysis.",
+      "A comprehensive social media management platform with data visualization, content scheduling, and analytics. Watch my final year project presentation showcasing the complete system.",
     image: "/projects/social-media-management-tool.jpg",
     technologies: ["Python", "Django", "Chart.js", "PostgreSQL", "Redis"],
-    features: ["Data visualization", "Weather forecasting", "Historical analysis", "API integration"],
+    features: ["Data visualization", "Content scheduling", "Analytics dashboard", "API integration", "Live presentation"],
     githubUrl: "https://github.com/jesnaty/Social-Media-Managemnt-tool",
-    featured: false,
+    liveUrl: "https://youtu.be/_epOZ5dnYNY",
+    featured: true,
   },
 ]
 

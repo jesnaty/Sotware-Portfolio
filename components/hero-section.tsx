@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { ArrowDown } from "lucide-react" // Removed Download, Mail
+import { ArrowDown } from "lucide-react"
 import { AnimatedText } from "@/components/animated-text"
 import { FloatingImage } from "@/components/floating-image"
 
@@ -16,27 +16,22 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto text-center">
+      <div className="max-w-4xl mx-auto text-center">
         <div
           className={`transition-all duration-1000 ${isMounted && isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
           <FloatingImage
             src="/natnael-ayele-profile.png"
-            alt="Profile Picture"
-            className="w-48 h-48 mx-auto mb-8 rounded-full border-4 border-blue-400 shadow-2xl"
+            alt="Natnael Ayele"
+            className="w-40 h-40 mx-auto mb-8 rounded-full border-3 border-blue-400 shadow-xl"
           />
 
           <AnimatedText
             text="Natnael Ayele"
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 bg-clip-text text-transparent animate-gradient-shift"
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
             delay={0.2}
           />
 
-          <AnimatedText
-            text="Full-Stack Software Engineer"
-            className="text-xl sm:text-2xl lg:text-3xl text-slate-300 mb-6"
-            delay={0.4}
-          />
 
           <div
             className={`transition-all duration-1000 delay-600 ${isMounted && isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
@@ -45,8 +40,6 @@ export function HeroSection() {
               Passionate about creating innovative solutions and building scalable applications that make a difference.
               Let's turn your ideas into reality.
             </p>
-
-            {/* Removed all buttons from Hero Section */}
           </div>
         </div>
 

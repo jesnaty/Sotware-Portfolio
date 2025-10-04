@@ -19,13 +19,13 @@ export function AboutSection() {
           </p>
           <div className="bg-slate-800/50 p-8 rounded-2xl border border-slate-700/50 shadow-xl">
             <p className="text-lg text-slate-300 leading-relaxed">
-              Hello! I'm Natnael Ayele, a dedicated Full-Stack Software Engineer with a passion for building robust,
+              Hello! I'm Natnael Ayele, a dedicated developer with a passion for building robust,
               scalable, and user-friendly applications. My journey in software development began with a curiosity for
               how things work, evolving into a drive to create impactful solutions. I thrive in dynamic environments,
               constantly learning and adapting to new technologies to deliver high-quality results.
             </p>
             <p className="text-lg text-slate-300 leading-relaxed mt-4">
-              With a strong foundation in both front-end and back-end development, I enjoy tackling complex problems and
+              With a strong foundation in general development, I enjoy tackling complex problems and
               transforming ideas into tangible products. I believe in clean code, collaborative teamwork, and continuous
               improvement. Let's connect and build something amazing together!
             </p>

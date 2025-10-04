@@ -20,6 +20,11 @@ const hobbies = [
     description: "Exploring new ideas and knowledge through various genres.",
     image: "/hobbies/books.jpeg", // Updated image path
   },
+  {
+    title: "Public Speaking",
+    description: "Presenting technical projects and sharing knowledge with audiences.",
+    image: "https://youtu.be/_epOZ5dnYNY",
+  },
 ]
 
 export function HobbiesSection() {
@@ -32,12 +37,12 @@ export function HobbiesSection() {
           className={`text-center mb-16 transition-all duration-1000 ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-            My Hobbies
+            Personal Interests & Activities
           </h2>
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto">Balancing professional life with personal passions</p>
+          <p className="text-xl text-slate-400 max-w-2xl mx-auto">Exploring diverse interests and continuous learning beyond technical work</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {hobbies.map((hobby, index) => (
             <Card
               key={hobby.title}
@@ -47,13 +52,32 @@ export function HobbiesSection() {
               style={{ transitionDelay: `${index * 150}ms` }}
             >
               <div className="relative">
-                <Image
-                  src={hobby.image || "/placeholder.svg"}
-                  alt={hobby.title}
-                  width={400}
-                  height={250}
-                  className="w-full h-48 object-cover"
-                />
+                {hobby.image && hobby.image.startsWith('https://youtu.be/') ? (
+                  <div className="w-full h-48 bg-gradient-to-br from-red-600 to-red-800 flex items-center justify-center cursor-pointer hover:bg-gradient-to-br hover:from-red-700 hover:to-red-900 transition-all duration-300">
+                    <a 
+                      href={hobby.image}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white text-center"
+                    >
+                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-2 mx-auto">
+                        <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z"/>
+                        </svg>
+                      </div>
+                      <p className="text-sm font-medium">Watch Presentation</p>
+                      <p className="text-xs opacity-80">Click to open YouTube</p>
+                    </a>
+                  </div>
+                ) : (
+                  <Image
+                    src={hobby.image || "/placeholder.svg"}
+                    alt={hobby.title}
+                    width={400}
+                    height={250}
+                    className="w-full h-48 object-cover"
+                  />
+                )}
               </div>
               <CardHeader>
                 <CardTitle className="text-white">{hobby.title}</CardTitle>
