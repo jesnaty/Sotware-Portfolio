@@ -101,6 +101,11 @@ export function CertificationsSection() {
                   width={60}
                   height={60}
                   className="rounded-lg bg-white p-2 object-contain"
+                  loading="lazy"
+                  onError={(e) => {
+                    e.currentTarget.src = "/placeholder.svg"
+                  }}
+                  sizes="60px"
                 />
                 <div className="flex-1">
                   <CardTitle className="text-white text-lg">{cert.title}</CardTitle>

@@ -134,13 +134,20 @@ export function ProjectsSection() {
               style={{ transitionDelay: `${index * 200}ms` }}
             >
               <div className="relative">
-                <Image
-                  src={project.image || "/placeholder.svg"}
-                  alt={project.title}
-                  width={500}
-                  height={300}
-                  className="w-full h-48 object-cover"
-                />
+                <div className="w-full h-48 bg-slate-700 flex items-center justify-center">
+                  <Image
+                    src={project.image || "/placeholder.svg"}
+                    alt={project.title}
+                    width={500}
+                    height={300}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    onError={(e) => {
+                      e.currentTarget.src = "/placeholder.svg"
+                    }}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
                 {project.featured && (
                   <div className="absolute top-4 right-4 bg-blue-600 text-white px-2 py-1 rounded-full text-xs flex items-center">
                     <Star className="h-3 w-3 mr-1" />
