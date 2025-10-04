@@ -19,8 +19,6 @@ export default function Home() {
       <MorphingDivider variant="wave" />
       <AboutSection />
       <MorphingDivider variant="neural" />
-      <ProfessionalSummary />
-      <MorphingDivider variant="quantum" />
       <SkillsSection />
       <MorphingDivider variant="matrix" />
       <GlitchTransition>
@@ -31,6 +29,8 @@ export default function Home() {
       <MorphingDivider variant="neural" />
       <HobbiesSection />
       <MorphingDivider variant="quantum" />
+      <ProfessionalSummary />
+      <MorphingDivider variant="matrix" />
       <ContactSection /> {/* New Contact Section */}
       <MorphingDivider variant="matrix" /> {/* Added a divider before the footer */}
       <Footer />
