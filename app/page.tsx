@@ -13,7 +13,7 @@ import { GlitchTransition } from "@/components/glitch-transition"
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white overflow-hidden">
+    <main className="relative min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white overflow-x-hidden">
       <ParticleBackground />
       <HeroSection />
       <MorphingDivider variant="wave" />

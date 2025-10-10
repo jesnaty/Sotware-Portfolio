@@ -12,6 +12,12 @@ export function useInView(options: UseInViewOptions = {}) {
   const ref = useRef<HTMLElement>(null)
 
   useEffect(() => {
+    if (typeof window !== 'undefined' && !("IntersectionObserver" in window)) {
+      // Fallback for very old browsers: consider content in view
+      setIsInView(true)
+      return
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsInView(entry.isIntersecting)
